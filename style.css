@@ -1,0 +1,32 @@
+#person {
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.persona {
+  display: block;
+  border: 2px solid;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.info {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+}
