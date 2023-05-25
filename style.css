@@ -143,9 +143,26 @@ body {
   border-radius: 25px;
 }
 
-img {
+.about {
+  width: 550px;
+  height: 50%;
+  position: absolute;
+  top: calc(50% - 50%/ 2);
+  bottom: calc(50% - 50%/ 2);
+  left: calc(50% - 550px / 2);
+  background-color: rgba(233, 233, 233, 0.6);
+  border-radius: 25px;
+}
 
+.person__photo {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
   max-width: 100%;
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 100px/2);
+
 }
 
 .description {
@@ -154,6 +171,20 @@ img {
   color: black;
   line-height: 1.5;
 
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.description_person {
+  margin: 60px;
+  text-align: center;
+  color: black;
+  line-height: 1.5;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -183,11 +214,6 @@ img {
   text-decoration: none;
 }
 
-
-
-
-
-
 .footer {
   background-color: #333;
   color: #fff;
@@ -203,7 +229,7 @@ img {
   font-size: 14px;
 }
 
-/* Styly pro responsivní design */
+/* Styly pro responsivní design
 @media only screen and (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -229,4 +255,4 @@ img {
   .menu.open {
     display: flex;
   }
-}
+} */
