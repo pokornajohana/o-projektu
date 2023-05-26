@@ -125,8 +125,8 @@ body {
 .background {
   height: 100%;
   width: 100%;
-  background-image: url(./img/image.jpg);
-  background-size: 120%;
+  background-image: url(./img/mapa.jpg);
+  background-size: 100%;
   opacity: 30%;
   filter: grayscale(0.3);
   background-repeat: no-repeat;
@@ -188,11 +188,17 @@ body {
 }
 
 .header {
-  background-color: rgb(233, 233, 233);
+  /* background-color: rgb(233, 233, 233); */
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: url(./img/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  /* background-position: 45%; */
+  background-position: center 45%;
+
 }
 
 .title {
