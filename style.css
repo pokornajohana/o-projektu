@@ -123,16 +123,21 @@ body {
 }
 
 .background {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   background-image: url(./img/mapa.jpg);
-  background-size: 100%;
+  /* background-size: 100%; */
   opacity: 30%;
   filter: grayscale(0.3);
   background-repeat: no-repeat;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
   height: 50%;
   position: absolute;
@@ -173,6 +178,10 @@ body {
 
 }
 
+.description__question {
+  padding: 20px;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -196,8 +205,7 @@ body {
   background-image: url(./img/logo.jpg);
   background-repeat: no-repeat;
   background-size: 50%;
-  /* background-position: 45%; */
-  background-position: center 45%;
+  background-position: 45% 47%;
 
 }
 
