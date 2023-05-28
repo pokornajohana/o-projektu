@@ -30,38 +30,15 @@ body {
   justify-content: space-between;
   align-items: center;
   background-image: url(./img/logo.jpg);
-  /* background-size: cover; */
   background-repeat: no-repeat;
   background-size: 73%;
   background-position: 38% 45%;
 }
 
-/* .header_person {
-  background-color: #fff;
-  color: #333;
-  padding: 30px;
-  height: 20%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url(./img/logo.jpg);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: 36% 45%;
-} */
-
 .title__main {
   font-size: 60px;
   font-weight: bold;
   font-family: 'Amatic SC', cursive;
-
-}
-
-.title__second__main {
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'Amatic SC';
-
 }
 
 .menu {
@@ -74,7 +51,8 @@ body {
   text-decoration: none;
 }
 
-.background {
+
+/* .background {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -86,21 +64,15 @@ body {
   filter: grayscale(0.3);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-
+} */
 
 .content {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  width: 80%;
-  height: 70%;
-  position: absolute;
-  padding: 30px;
-  top: calc(55% - 70%/ 2);
-  /* bottom: calc(40% - 50%/ 2); */
-  left: calc(50% - 80% / 2);
+  position: relative;
+  padding: 20px;
+  margin: 60px 40px 30px 40px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
 
@@ -110,15 +82,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 img {
   width: 30%;
   padding: 10px;
+  border-radius: 25px;
 }
-
-
 
 .description {
   text-align: center;
@@ -158,7 +128,7 @@ img {
 
 /* Stylování osobních stránek */
 
-.personal__card {
+/* .personal__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,19 +142,15 @@ img {
   background-color: rgba(233, 233, 233, 0.6);
   border-radius: 25px;
 
-}
+} */
 
 .personal__foto {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
-  display: block;
   margin: 0 auto;
-  position: absolute;
-  top: -25px;
-  left: -45px;
-  border: 3px solid white;
+  border: 1px solid white;
   box-shadow: black 4px 6px 20px;
 }
 
@@ -195,13 +161,6 @@ img {
   padding: 20px;
   margin: auto;
   text-align: center;
-}
-
-.personal__presented {
-  font-size: 18px;
-  text-align: justify;
-  margin: 0;
-  padding: 0 0 30px 0;
 }
 
 .gitHub {
@@ -215,11 +174,12 @@ img {
   display: block;
   border-radius: 5px;
   padding: 10px;
+  margin: 90px;
 }
 
 
 /* Responsivní styly */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -262,32 +222,45 @@ img {
   p {
     font-size: 16px;
   }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .hamburger__line {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin-bottom: 4px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .menu__item {
+    margin-bottom: 10px;
+  }
+
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: block;
+  }
+
+  a {
+    padding: 10px;
+  }
+
 }
-
-/* .figma_logo .figma_secondpage {
-  height: 20px;
-  width: 60px;
-} */
-
-/* .date-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Amatic SC', cursive;
-  font-size: 400%;
-  width: 50%;
-  height: 30%;
-  position: absolute;
-  padding: 27px;
-  top: calc(5% - 50%/ 2);
-  /* bottom: calc(40% - 50%/ 2); */
-/* left: calc(50% - 50% / 2);
-  background-color: rgba(233, 233, 233, 0.7); */
-/* background-image: url('./img/logo.jpg'); */
-/* background-size: 147%;
-  background-position: 45% 44%;
-  background-repeat: no-repeat;
-  border-radius: 25px;
-  box-shadow: rgb(39, 39, 39) 4px 6px 20px;
-} */
