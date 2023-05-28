@@ -1,116 +1,9 @@
-/* .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: beige;
-
-}
-
-
-.menu {
-  display: flex;
-  text-decoration: none;
-}
-
-a {
-  padding: 20px;
-}
-
-.hamburger {
-  display: none;
-
-}
-
-.hamburger__line {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  margin: 2px 0;
-}
-
-@media (max-width: 750px) {
-  .menu {
-    flex-direction: column;
-
-  }
-
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-  }
-
-
-  .menu {
-    display: none;
-  }
-}
-
-.content {
-  display: block;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.description {
-  border: solid black 1px;
-  padding: 20px;
-  margin: 20px;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  justify-content: space-between;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.about {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-} */
-
-
-
-/* #person {
-  background-color: bisque;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-}
-
-.persona {
-  display: block;
-  border: 2px solid;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.name {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 10px;
-}
-
-img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
-}
-
-.info {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 11px;
-} */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 
 body {
   display: flex;
@@ -122,16 +15,57 @@ body {
   height: 100vh;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #fff;
+  color: #333;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./img/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 45% 47%;
+}
+
+
+.title__main {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+}
+
 .background {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
   background-image: url(./img/mapa.jpg);
-  /* background-size: 100%; */
+  background-size: cover;
+  background-position: center;
   opacity: 30%;
   filter: grayscale(0.3);
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  padding: 20px;
 }
 
 .content {
@@ -145,87 +79,27 @@ body {
   bottom: calc(50% - 50%/ 2);
   left: calc(50% - 50% / 2);
   background-color: rgba(233, 233, 233, 0.6);
-  border-radius: 25px;
-}
-
-.about {
-  width: 550px;
-  height: 50%;
-  position: absolute;
-  top: calc(50% - 50%/ 2);
-  bottom: calc(50% - 50%/ 2);
-  left: calc(50% - 550px / 2);
-  background-color: rgba(233, 233, 233, 0.6);
-  border-radius: 25px;
-}
-
-.person__photo {
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-  max-width: 100%;
-  position: absolute;
-  top: 30px;
-  left: calc(50% - 100px/2);
-
 }
 
 .description {
-  margin: 60px;
   text-align: center;
   color: black;
   line-height: 1.5;
-
 }
 
 .description__question {
-  padding: 20px;
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-}
-
-.description_person {
-  margin: 60px;
-  text-align: center;
-  color: black;
-  line-height: 1.5;
-  align-items: center;
-  justify-content: center;
-}
-
-.header {
-  /* background-color: rgb(233, 233, 233); */
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url(./img/logo.jpg);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: 45% 47%;
-
-}
-
-.title {
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.hamburger {
-  display: none;
+.description__introduction {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.menu {
-  display: flex;
-  gap: 20px;
-}
-
-.menu a {
-  color: #333;
-  text-decoration: none;
+.description__project {
+  font-size: 18px;
 }
 
 .footer {
@@ -243,30 +117,109 @@ body {
   font-size: 14px;
 }
 
-/* Styly pro responsivní design
-@media only screen and (max-width: 768px) {
+/* Stylování osobních stránek */
+
+.personal__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  padding: 30px;
+  position: absolute;
+  top: calc(50% - 50%/ 2);
+  bottom: calc(50% - 50%/ 2);
+  left: calc(50% - 50% / 2);
+  background-color: rgba(233, 233, 233, 0.6);
+
+}
+
+.personal__foto {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: -25px;
+  left: -45px;
+  border: 3px solid white;
+  box-shadow: black 4px 6px 20px;
+}
+
+
+.personal__title {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.personal__presented {
+  font-size: 18px;
+  text-align: justify;
+  margin: 0;
+  padding: 0 0 30px 0;
+}
+
+.gitHub {
+  background-color: gray;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+/* Responsivní styly */
+@media (max-width: 768px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-
-  .menu a {
-    display: block;
+  .title__main {
     margin-bottom: 10px;
   }
 
-  .menu.open {
-    display: flex;
+  .menu {
+    margin-top: 10px;
   }
-} */
+
+  .description__question {
+    font-size: 20px;
+  }
+
+  .description__introduction,
+  .description__project {
+    font-size: 16px;
+  }
+
+  .personal__card {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .personal__foto {
+    width: 150px;
+    height: 150px;
+    top: -35px;
+    left: -35px;
+  }
+
+  .personal__title {
+    font-size: 40px;
+    margin: -250px 15px 30px 15px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
