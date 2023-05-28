@@ -38,7 +38,7 @@ body {
 .header_person {
   background-color: #fff;
   color: #333;
-  padding: 50px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,6 +53,14 @@ body {
   font-size: 50px;
   font-weight: bold;
   font-family: 'Amatic SC', cursive;
+
+}
+
+.title__second__main {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Amatic SC';
+
 }
 
 .menu {
@@ -103,7 +111,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Amatic SC', cursive;
-  font-size: 350%;
+  font-size: 400%;
   width: 50%;
   height: 30%;
   position: absolute;
@@ -133,7 +141,7 @@ body {
 }
 
 .description__introduction {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
